@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Candidate Spotlight – Susan Nickovich | Executive Director, EPMO @ HCN</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --forest:   #1A4731;
+  --forest2:  #0F2E1F;
+  --teal:     #0D7A6A;
+  --teal-lt:  #D4EDE8;
+  --gold:     #C8873A;
+  --gold-lt:  #FBF0E3;
+  --cream:    #F9F6F1;
+  --white:    #FFFFFF;
+  --ink:      #1A2A22;
+  --mid:      #4A6B5A;
+  --muted:    #8BA898;
+  --border:   #DCE8E2;
+}
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--cream);
+  color: var(--ink);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── PAGE WRAPPER ── */
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 0 80px;
+}
+
+/* ── HERO ── */
+.hero {
+  background: var(--forest2);
+  position: relative;
+  overflow: hidden;
+  padding: 56px 56px 48px;
+  animation: fadeIn 0.8s ease both;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 80% at 90% 50%, rgba(13,122,106,0.18) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(200,135,58,0.10) 0%, transparent 60%);
+}
+
+/* Subtle grid texture */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.hero-inner { position: relative; z-index: 1; }
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(13,122,106,0.25);
+  border: 1px solid rgba(13,122,106,0.5);
+  color: #7FD4C4;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border-radius: 30px;
+  margin-bottom: 28px;
+  animation: fadeUp 0.7s 0.1s ease both;
+}
+
+.hero-tag::before {
+  content: '';
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #7FD4C4;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(0.8); }
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 40px;
+  align-items: end;
+}
+
+.hero-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(42px, 6vw, 68px);
+  font-weight: 300;
+  color: #F2EDE4;
+  line-height: 0.95;
+  letter-spacing: -1px;
+  animation: fadeUp 0.7s 0.2s ease both;
+}
+
+.hero-name strong {
+  display: block;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.hero-position {
+  margin-top: 16px;
+  animation: fadeUp 0.7s 0.3s ease both;
+}
+
+.hero-position .pos-line {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hero-position .role-line {
+  font-size: 15px;
+  font-weight: 600;
+  color: #7FD4C4;
+  margin-top: 4px;
+}
+
+.hero-position .company-line {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 600;
+  font-style: italic;
+  color: var(--gold);
+  margin-top: 2px;
+}
+
+.hero-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-end;
+  animation: fadeUp 0.7s 0.4s ease both;
+}
+
+.hero-pill {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  color: rgba(255,255,255,0.7);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 5px 14px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.hero-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(13,122,106,0.5), rgba(200,135,58,0.3), transparent);
+  margin-top: 36px;
+  animation: fadeIn 1s 0.5s ease both;
+}
+
+/* ── OPENING STATEMENT ── */
+.opening {
+  padding: 44px 56px;
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  animation: fadeUp 0.6s 0.3s ease both;
+}
+
+.opening-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--forest);
+  line-height: 1.55;
+  border-left: 4px solid var(--teal);
+  padding-left: 24px;
+  position: relative;
+}
+
+.opening-quote::before {
+  content: '"';
+  font-size: 80px;
+  font-family: 'Cormorant Garamond', serif;
+  color: var(--teal-lt);
+  position: absolute;
+  top: -20px;
+  left: -10px;
+  line-height: 1;
+  z-index: 0;
+}
+
+.opening-quote span { position: relative; z-index: 1; }
+
+/* ── BODY SECTIONS ── */
+.body-wrap {
+  padding: 0 56px;
+}
+
+/* Section heading */
+.sec-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 48px 0 24px;
+}
+
+.sec-num {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--teal);
+  letter-spacing: 2px;
+  min-width: 28px;
+}
+
+.sec-label {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--mid);
+}
+
+.sec-line {
+  flex: 1;
+  height: 1px;
+  background: var(--border);
+}
+
+/* Section title */
+.sec-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--forest2);
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.sec-title em {
+  font-style: italic;
+  color: var(--teal);
+}
+
+/* Body copy */
+.body-copy {
+  font-size: 14.5px;
+  color: #3A5045;
+  line-height: 1.78;
+}
+
+.body-copy + .body-copy { margin-top: 16px; }
+
+/* ── MATCH GRID ── */
+.match-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.match-card {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px 22px;
+  transition: all 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.match-card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: var(--teal);
+  border-radius: 4px 0 0 4px;
+}
+
+.match-card.gold::before { background: var(--gold); }
+
+.match-card:hover {
+  border-color: var(--teal);
+  box-shadow: 0 6px 24px rgba(13,122,106,0.1);
+  transform: translateY(-2px);
+}
+
+.match-card.gold:hover { border-color: var(--gold); box-shadow: 0 6px 24px rgba(200,135,58,0.1); }
+
+.match-req {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 6px;
+}
+
+.match-title {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: var(--forest);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.match-proof {
+  font-size: 12.5px;
+  color: var(--mid);
+  line-height: 1.6;
+}
+
+.match-proof strong {
+  color: var(--teal);
+  font-weight: 600;
+}
+
+.match-card.gold .match-proof strong { color: var(--gold); }
+
+/* ── IMPACT TABLE ── */
+.impact-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.impact-table thead tr {
+  background: var(--forest);
+}
+
+.impact-table th {
+  padding: 12px 18px;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  text-align: left;
+}
+
+.impact-table td {
+  padding: 12px 18px;
+  font-size: 13px;
+  color: var(--ink);
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.impact-table tbody tr:last-child td { border-bottom: none; }
+
+.impact-table tbody tr:nth-child(even) td { background: #F4F9F7; }
+
+.impact-table .num { color: var(--teal); font-weight: 700; font-size: 14px; font-family: 'Cormorant Garamond', serif; }
+.impact-table .gold-num { color: var(--gold); font-weight: 700; font-size: 14px; font-family: 'Cormorant Garamond', serif; }
+
+/* ── PLAYBOOK ROWS ── */
+.playbook {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.pb-row {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 0;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.2s;
+}
+
+.pb-row:hover {
+  border-color: var(--teal);
+  box-shadow: 0 4px 16px rgba(13,122,106,0.08);
+}
+
+.pb-domain {
+  background: var(--forest);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pb-row.alt .pb-domain { background: var(--teal); }
+.pb-row.gold .pb-domain { background: var(--gold); }
+
+.pb-domain-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 4px;
+}
+
+.pb-domain-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: white;
+  line-height: 1.3;
+}
+
+.pb-content {
+  padding: 14px 20px;
+}
+
+.pb-own {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: 5px;
+}
+
+.pb-row.gold .pb-own { color: var(--gold); }
+
+.pb-bullets {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.pb-bullets li {
+  font-size: 11.5px;
+  color: var(--mid);
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3px 12px;
+}
+
+/* ── MISSION ALIGNMENT ── */
+.mission-block {
+  background: var(--forest2);
+  border-radius: 16px;
+  padding: 40px 44px;
+  margin: 24px 0;
+  position: relative;
+  overflow: hidden;
+  color: white;
+}
+
+.mission-block::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 60% 80% at 80% 30%, rgba(13,122,106,0.25) 0%, transparent 70%);
+}
+
+.mission-block::after {
+  content: '"';
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 200px;
+  color: rgba(255,255,255,0.03);
+  position: absolute;
+  top: -40px;
+  right: 20px;
+  line-height: 1;
+}
+
+.mission-inner { position: relative; z-index: 1; }
+
+.mission-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #7FD4C4;
+  margin-bottom: 16px;
+}
+
+.mission-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  color: rgba(255,255,255,0.88);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.mission-points {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.mp {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.mp-dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: #7FD4C4;
+  margin-top: 7px;
+  flex-shrink: 0;
+}
+
+.mp-text {
+  font-size: 13px;
+  color: rgba(255,255,255,0.72);
+  line-height: 1.55;
+}
+
+.mp-text strong { color: white; }
+
+/* ── VALUE PROPS ── */
+.value-props {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.vp {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px 20px;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.vp:hover {
+  border-color: var(--teal);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(13,122,106,0.1);
+}
+
+.vp-icon {
+  width: 48px; height: 48px;
+  border-radius: 50%;
+  margin: 0 auto 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.vp-icon.teal { background: var(--teal-lt); }
+.vp-icon.gold { background: var(--gold-lt); }
+.vp-icon.forest { background: rgba(26,71,49,0.08); }
+
+.vp-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--forest);
+  margin-bottom: 8px;
+  line-height: 1.3;
+}
+
+.vp-desc {
+  font-size: 11.5px;
+  color: var(--mid);
+  line-height: 1.6;
+}
+
+/* ── CLOSING ── */
+.closing {
+  background: linear-gradient(135deg, var(--forest2) 0%, #0B3322 60%, #0F3020 100%);
+  padding: 52px 56px;
+  color: white;
+  margin-top: 48px;
+  position: relative;
+  overflow: hidden;
+}
+
+.closing::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 50% 70% at 100% 50%, rgba(200,135,58,0.12) 0%, transparent 60%);
+}
+
+.closing-inner { position: relative; z-index: 1; }
+
+.closing-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-weight: 300;
+  color: rgba(255,255,255,0.92);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.closing-title em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.closing-body {
+  font-size: 14.5px;
+  color: rgba(255,255,255,0.68);
+  line-height: 1.75;
+  max-width: 680px;
+  margin-bottom: 36px;
+}
+
+.closing-sig {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.sig-line {
+  height: 1px;
+  width: 48px;
+  background: var(--gold);
+}
+
+.sig-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 20px;
+  font-style: italic;
+  color: rgba(255,255,255,0.85);
+}
+
+.sig-title {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: rgba(255,255,255,0.4);
+  text-transform: uppercase;
+  margin-top: 4px;
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Scroll reveal */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── UTILITY ── */
+.gold-text { color: var(--gold); }
+.teal-text { color: var(--teal); }
+
+highlight {
+  background: linear-gradient(120deg, rgba(13,122,106,0.12) 0%, rgba(13,122,106,0.06) 100%);
+  border-radius: 3px;
+  padding: 1px 4px;
+}
+
+/* Print / share bar */
+.topbar {
+  background: var(--forest);
+  padding: 10px 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.5);
+}
+
+.topbar-role {
+  font-size: 11px;
+  font-weight: 600;
+  color: #7FD4C4;
+  letter-spacing: 1px;
+}
+
+/* Responsive */
+@media (max-width: 720px) {
+  .hero, .opening, .body-wrap, .closing { padding-left: 28px; padding-right: 28px; }
+  .match-grid, .value-props { grid-template-columns: 1fr; }
+  .pb-row { grid-template-columns: 1fr; }
+  .mission-points { grid-template-columns: 1fr; }
+  .hero-grid { grid-template-columns: 1fr; }
+  .topbar { padding: 10px 28px; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="topbar">
+  <span class="topbar-label">Candidate Spotlight</span>
+  <span class="topbar-role">Executive Director, Enterprise PMO · Health Choice Network</span>
+</div>
+
+<div class="page">
+
+  <!-- ══ HERO ══ -->
+  <div class="hero">
+    <div class="hero-inner">
+      <div class="hero-tag">Candidate Spotlight · Confidential</div>
+      <div class="hero-grid">
+        <div>
+          <div class="hero-name">
+            Susan
+            <strong>Nickovich</strong>
+          </div>
+          <div class="hero-position">
+            <div class="pos-line">Applying For</div>
+            <div class="role-line">Executive Director, Enterprise PMO (EPMO)</div>
+            <div class="company-line">Health Choice Network</div>
+          </div>
+        </div>
+        <div class="hero-aside">
+          <span class="hero-pill">19+ Years Healthcare IT</span>
+          <span class="hero-pill">Lean Six Sigma Black Belt</span>
+          <span class="hero-pill">Epic · Cerner · Enterprise PMO</span>
+          <span class="hero-pill">$15M+ Savings Delivered</span>
+          <span class="hero-pill">$100M Budgets Managed</span>
+        </div>
+      </div>
+      <div class="hero-divider"></div>
+    </div>
+  </div>
+
+  <!-- ══ OPENING STATEMENT ══ -->
+  <div class="opening reveal">
+    <div class="opening-quote">
+      <span>I don't just manage portfolios — I build the governance architecture that makes large-scale healthcare transformation predictable, accountable, and strategically irreversible. After 19 years leading enterprise IT initiatives across health systems, pharmacy operations, and clinical transformation, I bring to HCN exactly what this role demands: the discipline of a seasoned EPMO executive, the technical depth of an Epic-fluent delivery leader, and the mission alignment of someone who has always believed that technology, when implemented right, changes lives in underserved communities.</span>
+    </div>
+  </div>
+
+  <!-- ══ BODY ══ -->
+  <div class="body-wrap">
+
+    <!-- SECTION 1: Why the Match is Exceptional -->
+    <div class="sec-head reveal">
+      <span class="sec-num">01</span>
+      <span class="sec-label">The Match</span>
+      <div class="sec-line"></div>
+    </div>
+    <div class="sec-title reveal">Why I Am the <em>Right Leader</em> for This Role</div>
+    <p class="body-copy reveal">HCN's Executive Director, EPMO role is not a generalist leadership position — it's a highly specific convergence of enterprise governance maturity, Epic implementation expertise, revenue cycle fluency, and the financial stewardship mindset of an executive who has operated at the intersection of clinical, operational, and IT strategy. That convergence is my career.</p>
+
+    <div class="match-grid reveal">
+      <div class="match-card">
+        <div class="match-req">HCN Requires</div>
+        <div class="match-title">Epic Implementation Leadership at Scale</div>
+        <div class="match-proof">Led Cerner inpatient pharmacy application enhancements as Sr. PM generating <strong>$6.4M in cost savings</strong>. Directed multi-module, multi-entity clinical system deployments across hospital builds and acquisitions. Managed go-live readiness, command center operations, and executive stakeholder alignment for enterprise-wide EMR programs at UPMC.</div>
+      </div>
+      <div class="match-card gold">
+        <div class="match-req">HCN Requires</div>
+        <div class="match-title">Enterprise Budget & Financial Stewardship</div>
+        <div class="match-proof">Managed capital and operational budgets from <strong>$10M to $100M</strong> across UPMC's enterprise IT portfolio. Delivered variance management, executive-level financial reporting, ROI analysis, and cost avoidance programs — including $5M+ in corporate finance process savings and $4M+ in annual consulting impact.</div>
+      </div>
+      <div class="match-card">
+        <div class="match-req">HCN Requires</div>
+        <div class="match-title">Revenue Cycle & Finance Operations Fluency</div>
+        <div class="match-proof">Deep operational background in healthcare finance — from economic modeling and predictive analytics at UPMC Health Plan to charge capture, AR optimization frameworks, and partnering with CFOs and CNOs on <strong>system-wide cost reduction programs</strong>. Finance is not a secondary discipline for me; it's foundational.</div>
+      </div>
+      <div class="match-card gold">
+        <div class="match-req">HCN Requires</div>
+        <div class="match-title">Lean Six Sigma Black Belt & Operational Excellence</div>
+        <div class="match-proof">Certified Lean Six Sigma Black Belt with a career built on measurable transformation. Delivered over <strong>$15M in combined savings</strong> across UPMC, Tefen client engagements (Brigham & Women's, Dana-Farber), and corporate finance initiatives — with quantifiable outcomes in throughput, cost, and quality at each stage.</div>
+      </div>
+      <div class="match-card">
+        <div class="match-req">HCN Requires</div>
+        <div class="match-title">Multi-Year Portfolio Governance & Steering Oversight</div>
+        <div class="match-proof">Built and led UPMC's enterprise PMO governance model as Manager, IT PMO — establishing standardized workflows, demand planning frameworks, portfolio dashboards, and executive steering protocols. Provided <strong>portfolio-level reporting to C-suite leaders</strong> across a complex, multi-department environment.</div>
+      </div>
+      <div class="match-card gold">
+        <div class="match-req">HCN Requires</div>
+        <div class="match-title">Pharmacy Automation & Clinical System Expertise</div>
+        <div class="match-proof">Currently leading enterprise pharmacy automation (Omnicell, Pyxis) at UPMC as Senior Manager, IT Applications — managing <strong>multidisciplinary clinical-IT teams</strong>, nursing informatics partnerships, regulatory compliance, and vendor relationships across acute care environments.</div>
+      </div>
+    </div>
+
+    <!-- SECTION 2: Immediate & Long-Term Impact -->
+    <div class="sec-head reveal">
+      <span class="sec-num">02</span>
+      <span class="sec-label">Value Creation</span>
+      <div class="sec-line"></div>
+    </div>
+    <div class="sec-title reveal">How I Create <em>Immediate & Long-Term Impact</em></div>
+    <p class="body-copy reveal">Great EPMO leaders don't wait for their 100-day plans to deliver value. They diagnose fast, build trust with executive sponsors, and create early governance wins that signal to the organization that the EPMO is here to enable — not obstruct — progress.</p>
+
+    <table class="impact-table reveal">
+      <thead>
+        <tr>
+          <th>Horizon</th>
+          <th>Focus Area</th>
+          <th>Action & Outcome</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="num">0–90 Days</span></td>
+          <td><strong>Portfolio Diagnostic</strong></td>
+          <td>Assess current portfolio health, budget baseline, and delivery risk. Establish direct relationships with health center partners and executive sponsors. Identify the 2–3 highest-risk initiatives and build immediate mitigation plans.</td>
+        </tr>
+        <tr>
+          <td><span class="num">90–180 Days</span></td>
+          <td><strong>Governance Architecture</strong></td>
+          <td>Launch standardized intake, prioritization scoring, and milestone governance frameworks. Stand up portfolio dashboard for executive-level visibility. Establish steering committee cadence with the Chief Strategic Officer.</td>
+        </tr>
+        <tr>
+          <td><span class="num">6–12 Months</span></td>
+          <td><strong>Epic & Revenue Cycle Delivery</strong></td>
+          <td>Embed go-live readiness protocols and command center operations for Epic implementations. Partner with Revenue Cycle leadership on AR days reduction, denial management, and charge capture optimization playbooks — driving measurable financial outcomes.</td>
+        </tr>
+        <tr>
+          <td><span class="gold-num">Year 2–3</span></td>
+          <td><strong>Enterprise Transformation Platform</strong></td>
+          <td>Evolve the EPMO from project execution to a strategic transformation engine. Build workforce capability, succession depth, and a repeatable delivery model that scales across HCN's growing community health center network nationwide.</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- SECTION 3: Domains I Confidently Own -->
+    <div class="sec-head reveal">
+      <span class="sec-num">03</span>
+      <span class="sec-label">Proven Playbooks</span>
+      <div class="sec-line"></div>
+    </div>
+    <div class="sec-title reveal">Domains I <em>Confidently Own</em></div>
+    <p class="body-copy reveal">These are not areas where I'm still developing — these are the domains where I have built repeatable playbooks through years of execution, failure, refinement, and measurable outcomes. I bring structured approaches that HCN can deploy from Day 1.</p>
+
+    <div class="playbook reveal">
+      <div class="pb-row">
+        <div class="pb-domain">
+          <div class="pb-domain-label">Playbook 01</div>
+          <div class="pb-domain-title">Enterprise Portfolio Governance</div>
+        </div>
+        <div class="pb-content">
+          <div class="pb-own">I own this completely</div>
+          <ul class="pb-bullets">
+            <li>Demand intake & prioritization scoring</li>
+            <li>Portfolio-level dashboard design</li>
+            <li>Executive steering committee facilitation</li>
+            <li>Risk escalation protocols</li>
+            <li>Resource capacity modeling</li>
+            <li>PMBOK & SDLC framework deployment</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pb-row alt">
+        <div class="pb-domain">
+          <div class="pb-domain-label">Playbook 02</div>
+          <div class="pb-domain-title">Epic & Clinical System Delivery</div>
+        </div>
+        <div class="pb-content">
+          <div class="pb-own">Deep implementation experience</div>
+          <ul class="pb-bullets">
+            <li>Multi-module EMR oversight</li>
+            <li>Go-live readiness frameworks</li>
+            <li>Command center operations</li>
+            <li>Clinical workflow alignment</li>
+            <li>Pharmacy automation integration</li>
+            <li>Interoperability planning</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pb-row gold">
+        <div class="pb-domain">
+          <div class="pb-domain-label">Playbook 03</div>
+          <div class="pb-domain-title">Financial Stewardship & ROI Management</div>
+        </div>
+        <div class="pb-content">
+          <div class="pb-own teal-text" style="color:var(--forest)">Multi-million dollar track record</div>
+          <ul class="pb-bullets">
+            <li>Capital & operating budget oversight</li>
+            <li>Variance management & forecasting</li>
+            <li>ROI & NPV modeling</li>
+            <li>Cost avoidance identification</li>
+            <li>Executive financial reporting</li>
+            <li>Cash acceleration strategy</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pb-row">
+        <div class="pb-domain">
+          <div class="pb-domain-label">Playbook 04</div>
+          <div class="pb-domain-title">Lean Six Sigma Process Transformation</div>
+        </div>
+        <div class="pb-content">
+          <div class="pb-own">Black Belt — measurable outcomes every time</div>
+          <ul class="pb-bullets">
+            <li>Process diagnostic & mapping</li>
+            <li>Root cause analysis (DMAIC)</li>
+            <li>Throughput & AR cycle improvement</li>
+            <li>Cross-functional change leadership</li>
+            <li>$15M+ in documented savings</li>
+            <li>Healthcare & manufacturing applications</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 4: Mission & Culture Alignment -->
+    <div class="sec-head reveal">
+      <span class="sec-num">04</span>
+      <span class="sec-label">Mission Alignment</span>
+      <div class="sec-line"></div>
+    </div>
+    <div class="sec-title reveal">Why <em>HCN's Mission</em> Resonates Deeply with Me</div>
+    <p class="body-copy reveal">There's a meaningful difference between working in healthcare IT and working for healthcare access. I've spent my career in health systems, and while the technical complexity is real, what has always fueled my best work is the knowledge that a well-implemented system means a patient in an underserved community gets their medication on time, a billing error doesn't bankrupt a family, and a health center can stay financially viable and keep its doors open.</p>
+    <p class="body-copy reveal" style="margin-top:16px;">HCN's mission is not incidental to this role — it is the role. Every governance decision, every Epic go-live, every revenue cycle optimization directly connects to a community health center's capacity to serve patients who have no other options. That's not a marketing statement to me. That's why I do this work.</p>
+
+    <div class="mission-block reveal">
+      <div class="mission-inner">
+        <div class="mission-label">What Specifically Resonates</div>
+        <div class="mission-quote">"They exist to improve access to high-quality healthcare in underserved communities — by equipping health centers with best-in-class systems like Epic and providing ongoing operational and technical support."</div>
+        <div class="mission-points">
+          <div class="mp">
+            <div class="mp-dot"></div>
+            <div class="mp-text"><strong>Best-in-class systems as the lever:</strong> I've spent 19 years proving that the right technology, implemented with discipline and clinical alignment, changes patient outcomes. Epic is not just a platform — it's infrastructure for equity when deployed well.</div>
+          </div>
+          <div class="mp">
+            <div class="mp-dot"></div>
+            <div class="mp-text"><strong>Operational and technical support as the differentiator:</strong> HCN doesn't just implement and leave. That ongoing partnership model is exactly how I approach the EPMO function — as a sustaining force, not a project executor.</div>
+          </div>
+          <div class="mp">
+            <div class="mp-dot"></div>
+            <div class="mp-text"><strong>25 years of community health impact:</strong> HCN's longevity and national reputation signal an organization that has earned trust. I thrive in environments where relationships and credibility are built over time, not sprinted.</div>
+          </div>
+          <div class="mp">
+            <div class="mp-dot"></div>
+            <div class="mp-text"><strong>Remote culture with mission-centered teams:</strong> I bring the self-direction, communication discipline, and accountability mindset that high-performing remote organizations depend on — paired with a collaborative approach that matches HCN's family-oriented culture.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SECTION 5: What I Bring Beyond the JD -->
+    <div class="sec-head reveal">
+      <span class="sec-num">05</span>
+      <span class="sec-label">Distinctive Value</span>
+      <div class="sec-line"></div>
+    </div>
+    <div class="sec-title reveal">What I Bring <em>Beyond the Job Description</em></div>
+    <p class="body-copy reveal">Every strong candidate will check the boxes. What differentiates a transformational EPMO leader is the depth beneath the competencies — the mindset, the battle-tested judgment, and the intangibles that only come from having led in genuinely complex environments.</p>
+
+    <div class="value-props reveal">
+      <div class="vp">
+        <div class="vp-icon forest">🧭</div>
+        <div class="vp-title">Engineering Roots, Executive Vision</div>
+        <div class="vp-desc">My foundation in industrial engineering gives me a systems-thinking discipline rare at the executive level. I don't just set strategy — I understand exactly how implementation decisions translate to operational outcomes.</div>
+      </div>
+      <div class="vp">
+        <div class="vp-icon teal">🤝</div>
+        <div class="vp-title">Clinical & Finance Bilingual</div>
+        <div class="vp-desc">I've operated fluently across clinical informatics, pharmacy operations, corporate finance, and IT PMO functions. I translate between these worlds naturally — which is what community health center transformation demands.</div>
+      </div>
+      <div class="vp">
+        <div class="vp-icon gold">📐</div>
+        <div class="vp-title">Governance That Enables, Not Constrains</div>
+        <div class="vp-desc">My governance philosophy is built on accelerating delivery, not bureaucratizing it. I design EPMO structures that executive sponsors want to use because they create clarity, not overhead.</div>
+      </div>
+      <div class="vp">
+        <div class="vp-icon teal">⚡</div>
+        <div class="vp-title">Financial Accountability as Culture</div>
+        <div class="vp-desc">I instill budget discipline not through compliance, but through shared ownership. My financial reporting structures make business owners partners in stewardship — which sustains accountability across multi-year programs.</div>
+      </div>
+      <div class="vp">
+        <div class="vp-icon forest">🔬</div>
+        <div class="vp-title">Vendor & Consultant Management at Scale</div>
+        <div class="vp-desc">Extensive experience managing complex vendor ecosystems — from pharmacy automation vendors to SaaS clinical platforms to national consulting firms — ensuring HCN's community health center partners receive optimal performance.</div>
+      </div>
+      <div class="vp">
+        <div class="vp-icon gold">🌱</div>
+        <div class="vp-title">Team Builder & Succession Planner</div>
+        <div class="vp-desc">I don't just lead PMO teams — I develop them. I've mentored senior project managers into leadership roles and believe strongly in building bench strength within the EPMO to protect long-term organizational capability.</div>
+      </div>
+    </div>
+
+  </div><!-- /body-wrap -->
+
+  <!-- ══ CLOSING ══ -->
+  <div class="closing reveal">
+    <div class="closing-inner">
+      <div class="closing-title">
+        The Right Leader,<br>
+        at the <em>Right Moment</em>,<br>
+        for the Right Mission.
+      </div>
+      <div class="closing-body">
+        HCN is at an inflection point — scaling its impact across community health centers nationwide, deploying Epic as the cornerstone of clinical transformation, and building the enterprise infrastructure to deliver on its 25-year promise to underserved communities. The Executive Director, EPMO is the operational architect of that ambition. I have spent 19 years building the exact capability this role requires — not in theory, but in practice, in high-stakes healthcare environments, with measurable outcomes at every stage. I am ready to bring all of it to HCN's mission, its team, and the communities it serves.
+      </div>
+      <div class="closing-sig">
+        <div class="sig-line"></div>
+        <div>
+          <div class="sig-name">Susan Nickovich</div>
+          <div class="sig-title">Senior Healthcare Technology & IT Transformation Leader</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /page -->
+
+<script>
+// Scroll reveal
+const reveals = document.querySelectorAll('.reveal');
+const revObs = new IntersectionObserver((entries) => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      revObs.unobserve(e.target);
+    }
+  });
+}, { threshold: 0.08 });
+reveals.forEach(r => revObs.observe(r));
+</script>
+
+</body>
+</html>
